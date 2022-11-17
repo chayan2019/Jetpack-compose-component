@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.withjetpack.jetpack_compose_yt.button.DisplayButton
 import com.withjetpack.jetpack_compose_yt.edittext.DisplayEdittextView
+import com.withjetpack.jetpack_compose_yt.image.ImageDisplayView
 import com.withjetpack.jetpack_compose_yt.textview.DisplayTextView
 import com.withjetpack.jetpack_compose_yt.ui.theme.JetpackcomposecomponentTheme
 
@@ -27,7 +28,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                    // DisplayTextView("Welcome to Jetpack Compose")
                   //  DisplayButton(LocalContext.current)
-                    DisplayEdittextView()
+                    //DisplayEdittextView()
+                    ImageDisplayView()
                  }
             }
         }
