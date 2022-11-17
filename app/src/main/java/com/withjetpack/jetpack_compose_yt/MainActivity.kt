@@ -8,7 +8,9 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import com.withjetpack.jetpack_compose_yt.button.DisplayButton
 import com.withjetpack.jetpack_compose_yt.textview.DisplayTextView
 import com.withjetpack.jetpack_compose_yt.ui.theme.JetpackcomposecomponentTheme
 
@@ -22,9 +24,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    //Greeting("Android")
-                    DisplayTextView("Welcome to Jetpack Compose")
-                }
+                   // DisplayTextView("Welcome to Jetpack Compose")
+                    DisplayButton(LocalContext.current)
+                 }
             }
         }
     }
